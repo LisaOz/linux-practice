@@ -1,6 +1,13 @@
 #!/bin/bash
 
-read -p "Choose the option (1-4) : " CHOICE
+# Menu of options:
+
+echo "1. Check users"
+echo "2. Check processes"
+echo "3. Check ports"
+echo "4. Check recent logs"
+
+read -p "Choose the option (1-4): " CHOICE
 
 case "$CHOICE" in    
     1)
@@ -20,7 +27,7 @@ case "$CHOICE" in
     
     4)
 	echo "=== Recent Logs ==="
-	journalctl --since "10 minutes ago" 
+	journalctl --since "10 minutes ago" --no-pager 
 	;;
 
     *)
