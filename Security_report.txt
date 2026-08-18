@@ -1,0 +1,131 @@
+======== SECURITY EVIDENCE REPORT =========
+Log file: /var/log/auth.log
+Date: Tue 18 Aug 12:49:23 UTC 2026
+
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.6  22088 13304 ?        Ss   10:39   0:01 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    10:39   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    10:39   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-rcu_p]
+root           6  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-slub_]
+root           7  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-netns]
+root          12  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-mm_pe]
+root          13  0.0  0.0      0     0 ?        I    10:39   0:00 [rcu_tasks_kthread]
+root          14  0.0  0.0      0     0 ?        I    10:39   0:00 [rcu_tasks_rude_kthread]
+root          15  0.0  0.0      0     0 ?        I    10:39   0:00 [rcu_tasks_trace_kthread]
+root          16  0.0  0.0      0     0 ?        S    10:39   0:00 [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        I    10:39   0:00 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    10:39   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    10:39   0:00 [idle_inject/0]
+root          20  0.0  0.0      0     0 ?        S    10:39   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    10:39   0:00 [kdevtmpfs]
+root          22  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-inet_]
+root          23  0.0  0.0      0     0 ?        S    10:39   0:00 [kauditd]
+root          24  0.0  0.0      0     0 ?        S    10:39   0:00 [khungtaskd]
+root          26  0.0  0.0      0     0 ?        S    10:39   0:00 [oom_reaper]
+root          28  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-write]
+root          29  0.0  0.0      0     0 ?        S    10:39   0:00 [kcompactd0]
+root          30  0.0  0.0      0     0 ?        SN   10:39   0:00 [ksmd]
+root          31  0.0  0.0      0     0 ?        SN   10:39   0:00 [khugepaged]
+root          32  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-kinte]
+root          33  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-kbloc]
+root          34  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-blkcg]
+root          35  0.0  0.0      0     0 ?        S    10:39   0:00 [irq/9-acpi]
+root          36  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-tpm_d]
+root          37  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-ata_s]
+root          38  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-md]
+root          39  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-md_bi]
+root          40  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-edac-]
+root          41  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-devfr]
+root          42  0.0  0.0      0     0 ?        S    10:39   0:00 [watchdogd]
+root          43  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-quota]
+root          44  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/0:1H-kblockd]
+root          45  0.0  0.0      0     0 ?        S    10:39   0:00 [kswapd0]
+root          46  0.0  0.0      0     0 ?        S    10:39   0:00 [ecryptfs-kthread]
+root          47  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-kthro]
+root          48  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-acpi_]
+root          49  0.0  0.0      0     0 ?        S    10:39   0:00 [scsi_eh_0]
+root          50  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-scsi_]
+root          51  0.0  0.0      0     0 ?        S    10:39   0:00 [scsi_eh_1]
+root          52  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-scsi_]
+root          57  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-mld]
+root          58  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-ipv6_]
+root          65  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-kstrp]
+root          67  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/u3:0]
+root          72  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-crypt]
+root          82  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-charg]
+root         146  0.0  0.0      0     0 ?        S    10:39   0:00 [scsi_eh_2]
+root         147  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-scsi_]
+root         148  0.0  0.0      0     0 ?        S    10:39   0:00 [scsi_eh_3]
+root         149  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-scsi_]
+root         151  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/0:2H-kblockd]
+root         163  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-kdmfl]
+root         192  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-raid5]
+root         231  0.0  0.0      0     0 ?        S    10:39   0:00 [jbd2/dm-0-8]
+root         232  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-ext4-]
+root         323  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-kmpat]
+root         324  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-kmpat]
+root         353  0.0  1.3 289116 27452 ?        SLsl 10:39   0:00 /sbin/multipathd -d -s
+root         441  0.0  0.0      0     0 ?        S    10:39   0:00 [irq/18-vmwgfx]
+root         444  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-ttm]
+root         478  0.0  0.0      0     0 ?        S    10:39   0:00 [jbd2/sda2-8]
+root         479  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-ext4-]
+root         580  0.0  0.0      0     0 ?        I<   10:39   0:00 [kworker/R-cfg80]
+message+     651  0.0  0.2   9888  5680 ?        Ss   10:39   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+polkitd      655  0.0  0.3 308164  8056 ?        Ssl  10:39   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root         663  0.0  0.6 468980 13584 ?        Ssl  10:39   0:00 /usr/libexec/udisks2/udisksd
+root         688  0.0  1.1 109692 23156 ?        Ssl  10:39   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+syslog       691  0.0  0.3 222508  6232 ?        Ssl  10:39   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         706  0.0  0.6 392100 12900 ?        Ssl  10:39   0:00 /usr/sbin/ModemManager
+root         727  0.0  0.1   6824  2904 ?        Ss   10:39   0:00 /usr/sbin/cron -f -P
+root         751  0.0  0.4  12020  8228 ?        Ss   10:39   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root         768  0.0  0.2   6968  4932 tty1     Ss   10:39   0:00 /bin/login -p --
+root         923  0.0  0.0      0     0 ?        S    10:40   0:00 [psimon]
+mozbe        925  0.0  0.5  20344 11556 ?        Ss   10:40   0:00 /usr/lib/systemd/systemd --user
+mozbe        926  0.0  0.1  21160  3568 ?        S    10:40   0:00 (sd-pam)
+mozbe        939  0.0  0.2   8784  5712 tty1     S    10:40   0:00 -bash
+root         980  0.0  0.0      0     0 ?        I    10:50   0:00 [kworker/u2:3-events_power_efficient]
+root        1009  0.0  0.0      0     0 ?        I<   10:54   0:00 [kworker/R-tls-s]
+root        1029  0.1  0.0      0     0 ?        I    11:00   0:07 [kworker/0:1-events]
+systemd+    1040  0.0  0.3  91028  7936 ?        Ssl  11:04   0:00 /usr/lib/systemd/systemd-timesyncd
+systemd+    1046  0.0  0.6  21472 13108 ?        Ss   11:04   0:00 /usr/lib/systemd/systemd-resolved
+systemd+    1052  0.0  0.4  19012  9568 ?        Ss   11:04   0:00 /usr/lib/systemd/systemd-networkd
+root        1056  0.0  0.0      0     0 ?        I    11:06   0:00 [kworker/u2:4-ext4-rsv-conversion]
+root        1081  0.0  0.4 388100  9504 ?        Ssl  11:11   0:00 /usr/libexec/upowerd
+root        1298  0.0  0.7  42356 14224 ?        S<s  11:49   0:00 /usr/lib/systemd/systemd-journald
+root        1300  0.0  0.3  28144  6864 ?        Ss   11:49   0:00 /usr/lib/systemd/systemd-udevd
+root        1301  0.4  0.0      0     0 ?        I    11:49   0:14 [kworker/0:0-events]
+root        1307  0.0  0.4  18000  8948 ?        Ss   11:49   0:00 /usr/lib/systemd/systemd-logind
+root        1310  0.0  0.0      0     0 ?        S    11:49   0:00 [psimon]
+root        1334  0.0  0.0      0     0 ?        I    12:00   0:00 [kworker/u2:1-events_power_efficient]
+root        1419  0.0  0.0      0     0 ?        I    12:45   0:00 [kworker/u2:0]
+root        1432  0.5  0.0      0     0 ?        I    12:47   0:00 [kworker/0:2-events]
+mozbe       1437  0.0  0.1   7340  3652 tty1     S+   12:49   0:00 /bin/bash ./security_collector.sh /var/log/auth.log
+mozbe       1439  0.0  0.2  10884  4592 tty1     R+   12:49   0:00 ps aux
+
+Netid State  Recv-Q Send-Q    Local Address:Port Peer Address:PortProcess                                               
+udp   UNCONN 0      0            127.0.0.54:53        0.0.0.0:*    users:(("systemd-resolve",pid=1046,fd=16))           
+udp   UNCONN 0      0         127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=1046,fd=14))           
+udp   UNCONN 0      0      10.0.2.15%enp0s3:68        0.0.0.0:*    users:(("systemd-network",pid=1052,fd=22))           
+tcp   LISTEN 0      4096         127.0.0.54:53        0.0.0.0:*    users:(("systemd-resolve",pid=1046,fd=17))           
+tcp   LISTEN 0      4096      127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=1046,fd=15))           
+tcp   LISTEN 0      4096            0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=751,fd=3),("systemd",pid=1,fd=93))
+tcp   LISTEN 0      4096               [::]:22           [::]:*    users:(("sshd",pid=751,fd=4),("systemd",pid=1,fd=94))
+
+Aug 18 12:40:14 ubuntu-server systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+Aug 18 12:40:14 ubuntu-server systemd[1]: sysstat-collect.service: Deactivated successfully.
+Aug 18 12:40:14 ubuntu-server systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+Aug 18 12:45:01 ubuntu-server CRON[1415]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 18 12:45:01 ubuntu-server CRON[1416]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Aug 18 12:45:01 ubuntu-server CRON[1415]: pam_unix(cron:session): session closed for user root
+Aug 18 12:47:59 ubuntu-server sudo[1426]:    mozbe : TTY=tty1 ; PWD=/home/mozbe/LinuxPractice/Lecture25 ; USER=root ; COMMAND=/usr/bin/ss -tulnp
+Aug 18 12:47:59 ubuntu-server sudo[1426]: pam_unix(sudo:session): session opened for user root(uid=0) by mozbe(uid=1000)
+Aug 18 12:47:59 ubuntu-server sudo[1426]: pam_unix(sudo:session): session closed for user root
+Aug 18 12:49:23 ubuntu-server sudo[1440]:    mozbe : TTY=tty1 ; PWD=/home/mozbe/LinuxPractice/Lecture25 ; USER=root ; COMMAND=/usr/bin/ss -tulnp
+Aug 18 12:49:23 ubuntu-server sudo[1440]: pam_unix(sudo:session): session opened for user root(uid=0) by mozbe(uid=1000)
+Aug 18 12:49:23 ubuntu-server sudo[1440]: pam_unix(sudo:session): session closed for user root
+
+Failed login entries: 4
+
+=================================================
