@@ -1,0 +1,76 @@
+#!/bin/bash
+
+echo "===== Initial observation ====="
+
+echo "User: $(whoami)"
+echo "Hostname: $(hostname)"
+echo "Current Directory: $(pwd)"
+echo "Date: $(date)"
+
+
+# Process
+echo "TCP process on 0.0.0.0:5555"
+sudo ss -tulnp | grep ':5555'
+
+# Process PID
+echo "Process PID:"
+ps -fp "$PID"
+
+# Parent
+echo "Parent PID:"
+pstree -sp  "$PID"
+
+# Executable
+ls -l "/proc/$PID/exe"
+
+# File Owner (owner, group, permissions)
+ls -l /usr/local/bin/mystery
+
+# Group
+getent group developers
+id
+groups
+
+# Permissions
+getfacl /usr/local/bin/mystery
+
+# Parent directory permissions
+ls -ld /usr/local/bin
+getfacl /usr/local/bin
+
+#  Service
+cat "/proc/$PID/cgroup"
+
+# User:
+# - ExecStart= what gets started
+# - User= what used the  service runs as
+# - Restart= what happens of the process stops
+systemctl cat mystery-service
+
+# Persistence
+systemctl is-enabled mystery.service
+systemctl list-timers
+crontab -l
+sudo crontab -l
+cat /etc/crontab
+
+
+# Network Connections
+sudo ss -tnp | grep "$PID"
+
+
+# Logs
+journalctl -u "$SERVICE" --since "10 minutes ago" --no-pager
+
+
+# Other Copies
+sudo find / -name "mystery" 2>/dev/null
+grep -R "mystery" /etc 2>/dev/null
+
+# Timestamps
+stat /urs/local/bin/mystery
+
+# Assessment
+
+echo "Risk assessment"
+echo "The combination of root execution, SUID, persistence, network exposure and unrecognised executable warrants further investigation."
